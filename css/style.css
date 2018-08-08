@@ -1,0 +1,25 @@
+header {
+/* background-image: url(../img/header-bg.jpg); */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.blackline {
+    background-color: black;
+    color: black;
+    text-align: center;
+}
