@@ -16,24 +16,38 @@ var regExp = /^([a-z]+\s[a-z]+)+$|^[a-z]+-[a-z]+$|^[a-z]+$/gi;
  herois, verificando se o valor corresponde a algum nome na lista. Em caso positivo,
  retorna o id dos herois chamando a função algumacoisa*/
 
-const outracoisa = (a) => {
+ const outracoisa = (a) => {
     fetch('js/herois.json')
-        .then(res => res.json())
-        .then(herois => {
-            const h1 = Object.entries(herois)
-            let number = 0
-            h1.map( e => {if(e[0]== a){
-                number = e[1]
-                algumacoisa(number)
-            }
-            })
-        })
-} 
+    .then(res => res.json())
+    .then(herois => {
+    const h1 = Object.entries(herois)
+    let number = 0
+    h1.map( e => {if(e[0]== a){
+        number = e[1]
+        algumacoisa(number)
+    }else{
+        alert('Eita, nada desse heroi por aqui :( Tem certeza que digitou o nome de um herói?')
+    }
+    })
+    })
+}
 
 /**Chama a função outracoisa ao botão ser clicado */
 botao.addEventListener('click', function() {
-    if(regExp.test(heroName.value) === true){
-        outracoisa(heroName.value)
+    var valor1 = heroName.value.split('')
+    let novovalor = ""
+    valor1.map((element, index, valor1) =>{
+        if(index === 0){
+            novovalor += element.toUpperCase()
+        }else if(valor1[index-1] === ' '){
+            novovalor += element.toUpperCase()
+        }else{
+            novovalor += element
+        }
+
+        })
+    if(regExp.test(novovalor) === true){
+        outracoisa(novovalor)
     }
     else{
         alert('Valor inválido, tenta de novo? Você pode digitar algo como "Super man" ou "A-Bomb" ou ainda "Batman". Valores como "Homem Aranha 2" não funcionam, beleza?')
