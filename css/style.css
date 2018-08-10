@@ -1,5 +1,5 @@
 header {
-/* background-image: url(../img/header-bg.jpg); */
+    background-image: url(../img/capa2.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -8,6 +8,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: white;
 }
 
 main {
@@ -16,39 +17,47 @@ main {
     align-items: center;
     text-align: center;
     height: 100vh;
+    background-image: url(../img/capa.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
 }
 
-.blackline {
+.blackline p {
     background-color: black;
     color: black;
     text-align: center;
+    margin: 0;
 }
 
 .displayInfo {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
-    border: 1px solid gray;
-    padding: 10% 20%;
+    border: 5px solid black;
+    padding: 0% 20%;
+    background-color: black;
+    color: white;
 }
 
-.heroName {
-    grid-column: 1 / 3;
-    border: 1px solid gray;
-    padding: 1%;
+.trashtalk {
+    background-color: black;
+    border-radius: 10px;
+    width: 40vw;
+    height: 30vh;
 }
 
-.heroImage {
-    border: 1px solid gray;
-    padding: 10%;
-}
-
-.heroInfo {
-    border: 1px solid gray;
-    padding: 10%;
-}
-
-.backButton {
-    grid-column: 1 / 3;
-    padding: 5%;
+.front-banner {
+    background-color: black;
+    border-radius: 10px;
+    width: 40vw;
+    height: 20vh;
 }

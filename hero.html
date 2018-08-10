@@ -16,7 +16,7 @@
 <body>
     <nav>
         <div class="nav-wrapper blue-grey darken-2">
-            <a href="#" class="brand-logo">Heropedia</a>
+            <a href="index.html" class="brand-logo">Heropedia</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="index.html">Home</a></li>
             <li><a href="hero.html">Heroes</a></li>
@@ -25,20 +25,28 @@
         </div>
     </nav>
 
-    <header>
-        <div class="front-banner">
-            <h2>Who do you want to know more about?</h2>
-                <div class="row">
-                    <form class="col s12">
-                        <div class="row">
+    <div>
+        <h2>Who do you want to know more about?</h2>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row" id="meio">
                         <div class="input-field col s6">
                             <input placeholder="Hi, Deadpool here :)" id="hero_name" type="text" class="validate">
                             <label for="first_name">First Name</label>
+                            <a class="waves-effect waves-light btn red" id="searchButton">Buscar</a>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
+            </div>
+    </div>
+
+    <div class="displayInfo">            
+        <div class="heroImage" id="foto">
         </div>
-    </header>
+        <div> 
+            <span id="texto"></span>
+        </div>
+    </div>
     
     
     <footer class="page-footer blue-grey darken-2">
@@ -61,6 +69,7 @@
         <p>Heropedia © Feito por Janaina Felix, Karol Lima e Pablo Dias</p>
     </footer> -->
     <!-- Materialize Javascript -->
+    <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 </body>
 </html>
