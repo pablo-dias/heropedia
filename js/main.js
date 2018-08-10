@@ -11,7 +11,7 @@ let foto = document.querySelector('#foto')
 let texto = document.querySelector('#texto')
 
 /**Criando padrão para validar a entrada */
-var regExp = /^([a-z]+\s[a-z]+)+$|^[a-z]+-[a-z]+$|^[a-z]+$/gi;
+var regExp = /^([a-zA-Z]+\s[a-zA-Z]+)+$|^[a-zA-Z]+-[a-zA-Z]+$|^[a-zA-Z]+$/gi;
 /*Funçao que recebe o valor que o usuário digita, percorre o json com nome e id dos
 herois, verificando se o valor corresponde a algum nome na lista. Em caso positivo,
 retorna o id dos herois chamando a função algumacoisa*/
