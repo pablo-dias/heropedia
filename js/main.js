@@ -25,8 +25,6 @@ var regExp = /^([a-z]+\s[a-z]+)+$|^[a-z]+-[a-z]+$|^[a-z]+$/gi;
     h1.map( e => {if(e[0]== a){
         number = e[1]
         algumacoisa(number)
-    }else{
-        alert('Eita, nada desse heroi por aqui :( Tem certeza que digitou o nome de um herói?')
     }
     })
     })
