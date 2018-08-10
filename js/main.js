@@ -12,11 +12,11 @@ let texto = document.querySelector('#texto')
 
 /**Criando padrão para validar a entrada */
 var regExp = /^([a-z]+\s[a-z]+)+$|^[a-z]+-[a-z]+$|^[a-z]+$/gi;
-/**Funçao que recebe o valor que o usuário digita, percorre o json com nome e id dos
- herois, verificando se o valor corresponde a algum nome na lista. Em caso positivo,
- retorna o id dos herois chamando a função algumacoisa*/
+/*Funçao que recebe o valor que o usuário digita, percorre o json com nome e id dos
+herois, verificando se o valor corresponde a algum nome na lista. Em caso positivo,
+retorna o id dos herois chamando a função algumacoisa*/
 
- const outracoisa = (a) => {
+const outracoisa = (a) => {
     fetch('js/herois.json')
     .then(res => res.json())
     .then(herois => {
@@ -50,7 +50,6 @@ botao.addEventListener('click', function() {
     else{
         alert('Valor inválido, tenta de novo? Você pode digitar algo como "Super man" ou "A-Bomb" ou ainda "Batman". Valores como "Homem Aranha 2" não funcionam, beleza?')
     }
-    
 })
 
 /**Passa o id recebido para a url da api, e a retorna */
