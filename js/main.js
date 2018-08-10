@@ -55,7 +55,7 @@ botao.addEventListener('click', function() {
 /**Passa o id recebido para a url da api, e a retorna */
 const algumacoisa = (number) => { 
     
-    fetch(`https://www.superheroapi.com/api.php/2700278850112813/${number}/`)
+    fetch(`http://www.superheroapi.com/api.php/2700278850112813/${number}/`)
     .then(res => res.json())
     .then(heroi => {
         
